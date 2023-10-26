@@ -1,5 +1,61 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #280c04;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 200px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 10px 0 30px;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header a {
+  background: white;
+  color: #280c04;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  margin-top: 32px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 footer {
-  color: black;
+  color: white;
   font-size: 10px;
   margin: 20px auto 0px;
   max-width: 400px;
@@ -7,6 +63,25 @@ footer {
 }
 
 .code-link {
+  color: white;
   font-weight: 800;
   text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
