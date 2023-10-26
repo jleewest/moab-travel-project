@@ -6,7 +6,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 header {
@@ -55,6 +55,16 @@ header a {
   text-transform: uppercase;
 }
 
+main {
+  background-color: white;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('../images/footer.jpg');
@@ -65,6 +75,36 @@ footer {
   line-height: 1.5;
   padding: 300px 40px 20px;
   text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-align-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 25px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
 }
 
 .code-link {
@@ -92,5 +132,18 @@ footer {
   footer {
     font-size: 7px;
     padding: 150px 20px 10px;
+  }
+
+  ul {
+    line-height: 9px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
