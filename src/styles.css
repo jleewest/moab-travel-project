@@ -68,6 +68,9 @@ main h2 {
   color: #280c04;
   opacity: 0.3;
   text-transform: uppercase;
+}
+
+.text-center {
   text-align: center;
 }
 
@@ -91,7 +94,7 @@ main p {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px;
+  padding: 75px 100px;
 }
 
 section.secondary {
@@ -202,13 +205,18 @@ li a {
   header h3 {
     font-size: 12px;
   }
+
+  main h3 {
+    text-align: center;
+  }
+
   footer {
-    font-size: 7px;
+    font-size: 9px;
     padding: 150px 20px 10px;
   }
 
   ul {
-    line-height: 9px;
+    line-height: 11px;
   }
 
   .grid {
